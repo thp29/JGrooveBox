@@ -2,16 +2,16 @@
 
 Un séquenceur rythmique (Drum Machine) 16 pas sur 1 mesure, développé en Java. 
 
-Ce projet m'a permis de travailler sur ces concepts : gestion d'événements temps réel, programmation concurrente (Threads), gestion du MIDI & Audio, et conception d'interfaces graphiques en Java Swing.
+Ce projet m'a permis de travailler sur ces concepts : gestion d'événements temps réel, programmation concurrente (Threads), gestion du MIDI & Audio, et conception d'interfaces graphiques en Java Swing. (En partie assisté par IA)
 
 ---
 
 ## 🎯 Fonctionnalités Principales
 
 *   **Séquenceur 16 pas :** Grille intuitive permettant de programmer des rythmes sur 5 pistes simultanées (Kick, Snare, Clap, Closed Hi-hat, Open Hi-hat).
-*   **Moteur Audio Polyphonique :** Système de "Voice Pooling" (4 voix par piste) empêchant la coupure brutale d'un son lorsqu'il est redéclenché rapidement.
-*   **Synchronisation MIDI :** Utilisation de l'horloge interne `javax.sound.midi` pour un timing rythmique précis.
-*   **Mixage Temps Réel :** Contrôle du volume indépendant pour chaque piste.
+*   **Moteur Audio Polyphonique :** Système de "Voice Pooling" (4 voix par piste) empêchant la coupure d'un son lorsqu'il est redéclenché rapidement.
+*   **Synchronisation MIDI :** Utilisation de l'horloge interne `javax.sound.midi` pour un timing précis.
+*   **Mixage en temps Réel :** Contrôle du volume indépendant pour chaque piste.
 *   **Contrôle du Tempo :** Ajustement en direct du BPM (50 à 150 BPM).
 *   **Persistance des Données :** Sauvegarde et importation des patterns rythmiques via un système d'I/O sur fichier texte (`pattern_sauvegarde.txt`).
 *   **Interface Réactive :** Retour visuel / tête de lecture (changement de couleur des pas) synchronisé avec le flux audio via `SwingUtilities.invokeLater`.
